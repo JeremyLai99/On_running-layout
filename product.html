@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Running | Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="d-flex flex-column h-100">
+     <!-- nav bar -->
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="ps-3" style="height: 50px;" src="images/onlogo-black.png" alt="on running"></a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-warning rounded-3" style="font-weight: 900;">
+                <!-- 下拉選單 開始 -->
+                <li class="nav-item dropdown" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                  <a class="active nav-link dropdown-toggle" href="product-list.html" id="navbarDropdown" role="button" aria-expanded="false">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="product-list.html#roadrunning">Road Running</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#lifestyle">Lifestyle</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#training">Training</a></li>
+                  </ul>
+                </li>
+                <!-- 下拉選單 結束 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">Q & A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About On</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <li class="nav-item " >
+                  <a  class="btn" style="padding: 8px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <i class="fa-solid fa-circle-user"></i></a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <!-- 購物車 畫布-->
+                <li class="nav-item " >
+                  <a  class="btn "style="padding: 8px !important;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample " role="button" aria-controls="offcanvasExample" >                
+                    <i class="fa-solid fa-bag-shopping fs-5" >
+                    <span class="position-absolute  translate-middle badge rounded-pill bg-danger" style="font-size: xx-small ; top: 17px; right: -10px;" >
+                    99+
+                    </i></a>
+                </li>                 
+                <!-- 購物車 畫布-->
+                
+                <!-- 有空嘗試下拉搜尋 -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./abount.html"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                </li> -->          
+              </ul>            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+   </div>
+   <!-- nav bar -->
+   
+   <!-- Breadcrumb -->
+  <div class="container-fluid mt-6 pt-3 pb-1 bg-dark d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-12 ">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="text-warning">Home</a></li>
+                  <li class="breadcrumb-item"><a href="product-list.html" class="text-warning">Product-list</a></li>
+                  <li class="breadcrumb-item active text-white" aria-current="page">Product</li>
+                </ol>
+            </nav>
+        </div>
+      </div>
+    </div>
+   <!-- Breadcrumb -->
+
+   
+   <main class="flex-shrink-0 my-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">            
+            <!-- 輪播 carousel -->
+              <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/product01.png" class="d-block w-100" alt="abouton02">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/product02.png" class="d-block w-100" alt="abouton03">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/product03.png" class="d-block w-100" alt="abouton04">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/product04.png" class="d-block w-100" alt="abouton05">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/product05.png" class="d-block w-100" alt="abouton05">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/product06.png" class="d-block w-100" alt="abouton05">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>     
+            <!-- 輪播 carousel -->
+          </div>
+
+          <div class="col-12 col-lg-4 h-100">
+            <h2 class="fw-bolder">Cloudrunner 2 Waterproof</h2>
+            <h4 class="my-3">We did it again. This time with more cushioning, more propulsion and more energy return than ever before. Supercharge your run with these pacy road runners.</h4>
+            <span>Color :</span>
+            <div class="d-flex mt-1 mb-3">
+            <div class="form-check">
+              <input class="form-check-input bg-dark" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+              <label class="form-check-label me-3" for="flexRadioDefault1">
+                Black
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input bg-light" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label me-3" for="flexRadioDefault2">
+                White
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                Blue
+              </label>
+            </div>
+          </div>
+
+          <span>Size : EU Men's Sizes</span>
+          <div class="d-flex mt-1 mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+              <label class="form-check-label me-3" for="flexRadioDefault1">
+                40
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label me-3" for="flexRadioDefault2">
+                40.5
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                41
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label me-3" for="flexRadioDefault2">
+                41.5
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                42
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label me-3" for="flexRadioDefault2">
+                42.5
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                43
+              </label>
+            </div>            
+          </div>
+          <span class="fs-5 me-5">Price: NT$5,580.00</span>
+          <button type="button" class="btn btn-outline-success fw-bolder ms-5">Add into chart</button>
+        </div>    
+
+
+
+
+            
+
+            
+
+          </div>
+
+        </div>
+    </div>
+</main>
+
+
+
+
+  <!-- 向上標籤 -->
+  <a href="#" class="position-fixed end-0 bottom-0 text-decoration-none m-5 p-2 text-white rounded-circle fs-3 bg-warning darker"><i class="fa-solid fa-angles-up"></i></a>
+  <!-- 向上標籤 -->
+  <!-- footer -->
+  <footer class="footer mt-auto py-5 mx-0 bg-dark text-white ">
+    <div class="container">
+      <div class="contact">
+          <div class="address">
+              <h2 class="title3">Contact Us</h2>
+              <p>If you have any questions, please feel free to let us know</p>
+              <ol>
+                  <li><i class="fa-solid fa-location-crosshairs"></i> No. 7, Section 5, Xinyi Road, Xinyi District, Taipei City</li>
+                  <li><i class="fa-solid fa-phone"> </i> 02-1234-5678</li>
+                  <li><i class="fa-solid fa-envelope"></i> example@mail.com</li>
+              </ol>
+          </div>
+  </footer>
+  <!-- footer -->
+
+<!-- Modal 會員登入-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">Welcome to On Running</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 會員登入-->
+
+<!-- Modal 購物車 畫布 -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Welcome to your shopping cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-center">
+    <i class="bi bi-bag-dash" style="font-size: 100px;"></i>
+          <h3>There is 0 item in your cart</h3>
+  </div>
+  <div class="d-flex justify-content-end mb-3 me-2">
+    <button type="button" class="btn btn-dark" onclick="BacktoShop()">Back to shop</button>
+  </div>
+</div>
+<!-- Modal 購物車 畫布 -->
+<script>
+  var dropdownMenuTimeout;
+
+function showDropdownMenu() {
+  clearTimeout(dropdownMenuTimeout);
+  var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+  dropdownMenu.style.display = 'block';
+};
+
+function hideDropdownMenu() {
+  dropdownMenuTimeout = setTimeout(function() {
+    var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+    dropdownMenu.style.display = 'none';
+  }, 200);
+};
+
+function BacktoShop() {
+  window.location.href = 'product-list.html';
+};
+
+document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', event => {
+        const selectedStore = event.target.getAttribute('data-value');
+        document.getElementById('selectedStore').value = selectedStore;
+        document.getElementById('stores').value = selectedStore;
+    });
+});
+
+// tab 隱藏其他tab
+const tabs = document.querySelectorAll('.nav-link');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const tabContents = document.querySelectorAll('.tab-pane');
+    tabContents.forEach(content => {
+      content.classList.remove('show', 'active');
+    });
+
+    const tabTarget = document.querySelector(tab.getAttribute('data-bs-target'));
+    tabTarget.classList.add('show', 'active');
+  });
+});
+
+// tab 隱藏其他tab
+
+
+</script>
+
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- bootstrap cdn js -->
+</body>
+</html>

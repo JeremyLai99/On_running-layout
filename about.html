@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Running | About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="d-flex flex-column h-100">
+     <!-- nav bar -->
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="ps-3" style="height: 50px;" src="images/onlogo-black.png" alt="on running"></a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-warning rounded-3" style="font-weight: 900;">
+                <!-- 下拉選單 開始 -->
+                <li class="nav-item dropdown" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                  <a class="active nav-link dropdown-toggle" href="product-list.html" id="navbarDropdown" role="button" aria-expanded="false">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="product-list.html#roadrunning">Road Running</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#lifestyle">Lifestyle</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#training">Training</a></li>
+                  </ul>
+                </li>
+                <!-- 下拉選單 結束 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">Q & A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About On</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <li class="nav-item " >
+                  <a  class="btn" style="padding: 8px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <i class="fa-solid fa-circle-user"></i></a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <!-- 購物車 畫布-->
+                <li class="nav-item " >
+                  <a  class="btn "style="padding: 8px !important;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample " role="button" aria-controls="offcanvasExample" >                
+                    <i class="fa-solid fa-bag-shopping fs-5" >
+                    <span class="position-absolute  translate-middle badge rounded-pill bg-danger" style="font-size: xx-small ; top: 17px; right: -10px;" >
+                    99+
+                    </i></a>
+                </li>                 
+                <!-- 購物車 畫布-->
+                
+                <!-- 有空嘗試下拉搜尋 -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./abount.html"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                </li> -->          
+              </ul>            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+   </div>
+   <!-- nav bar -->
+   
+   <!-- Breadcrumb -->
+  <div class="container-fluid mt-6 pt-3 pb-1 bg-dark d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-12 ">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="text-warning">Home</a></li>
+                  <li class="breadcrumb-item active text-white" aria-current="page">About On</li>
+                </ol>
+            </nav>
+        </div>
+      </div>
+    </div>
+   <!-- Breadcrumb -->
+
+   
+   <!-- 輪播 carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/about02.jpg" class="d-block w-100" alt="abouton02">
+        </div>
+        <div class="carousel-item">
+          <img src="images/about03.jpg" class="d-block w-100" alt="abouton03">
+        </div>
+        <div class="carousel-item">
+          <img src="images/about04.jpeg" class="d-block w-100" alt="abouton04">
+        </div>
+        <div class="carousel-item">
+          <img src="images/about05.jpg" class="d-block w-100" alt="abouton05">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>     
+  <!-- 輪播 carousel -->
+
+  <main class="flex-shrink-0  my-5">
+    <div class="container d-flex justify-content-center mb-5">
+      <div class="row ">
+        <h1 class="fw-bold">At On, we believe incredible things happen when humans move. Being in motion taps into the place in the subconscious where inspiration lies. It's called flow state: A mindset where action and awareness blur together, leaving us fully immersed in the moment. A hack for the mind, helping us to dream bigger and better.</h1>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-start">
+      <div class="row">
+        <!-- card -->
+        <div class="card me-2 mb-2" style="width: 18rem;">
+          <img src="images/about-card01.avif" class="card-img-top pt-2 rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Right to Run</h5>
+            <p class="card-text mb-0 !important">A community-led initiative to support running as a fundamental right.</p>
+            <a href="#" class="d-flex justify-content-end text-decoration-none"><i class="fa-solid fa-circle-arrow-right fs-5 text-warning"></i></a>
+          </div>
+        </div>
+        <div class="card me-2 mb-2" style="width: 18rem;">
+          <img src="images/about-card02.avif" class="card-img-top pt-2 rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CleanCloud</h5>
+            <p class="card-text mb-0 !important">The revolutionary tech that turns carbon emissions into running shoes.</p>
+            <a href="#" class="d-flex justify-content-end text-decoration-none"><i class="fa-solid fa-circle-arrow-right fs-5 text-warning"></i></a>
+          </div>
+        </div>
+        <div class="card me-2 mb-2" style="width: 18rem;">
+          <img src="images/about-card03.avif" class="card-img-top pt-2 rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">On Athletics Club</h5>
+            <p class="card-text mb-0 !important">Our first-ever track team made up of elite runners from all over the global.</p>
+            <a href="#" class="d-flex justify-content-end text-decoration-none"><i class="fa-solid fa-circle-arrow-right fs-5 text-warning"></i></a>
+          </div>
+        </div>
+        <div class="card me-2 mb-2" style="width: 18rem;">
+          <img src="images/about-card04.avif" class="card-img-top pt-2 rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CloudTec</h5>
+            <p class="card-text mb-0 !important">The one-of-a-kind multi-directional cushioning system for running on clouds.</p>
+            <a href="#" class="d-flex justify-content-end text-decoration-none"><i class="fa-solid fa-circle-arrow-right fs-5 text-warning"></i></a>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center my-5 bg-dark text-white">
+      <div class="row ">
+        <div class="col-12 px-5 my-3">
+          <h1 class="fw-bold">A more sustainable future</h1>
+          <h2>We believe progress lies in technological innovation. Experimenting better. From the humble garden hose stapled to the outsole of our first prototype – all the way to our ultimate vision of building a brighter future with fossil-free materials and circular systems. Our three main focuses are:</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- 切版換順序 -->
+    <!-- 第一種順序 -->
+    <div class="container">
+      <div class="row mb-5" >
+        <h2 class="col-12 text-center mb-3 fst-italic">Fossil free material</h2>
+        <div class="col-xl-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-YFaAG6gE58?si=729PwGV0DeMUF636" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="col-xl-6">
+          <h2 class="mt-2">CloudTec® technology</h2>
+          <div class="my-5">
+            With the creation of their unique CloudTec® technology, which provides runners with responsive, multi-directional cushioning in their footwear, On was a brand already doing things differently. Now they’re taking this commitment to innovation even further: From the Cloudneo to the launch of their Cyclon program — a recyclable shoe subscription service — the team at On is pioneering exciting changes in the performance sportswear industry. 
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二種順序 -->
+      <div class="row mb-5">
+        <h2 class="col-12 text-center mb-3 fst-italic">Design for circularity</h2>
+        <div class="col-xl-6 order-xl-2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dgEkyZ9k4Kk?si=e6SmYfS_9qT4Zmk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="col-xl-6 order-xl-1 text-end goleft">
+          <h2 class="mt-2 ">Cyclon program</h2>
+          <div class="my-5 ">With the creation of their unique CloudTec® technology, which provides runners with responsive, multi-directional cushioning in their footwear, On was a brand already doing things differently. Now they’re taking this commitment to innovation even further: From the Cloudneo to the launch of their Cyclon program — a recyclable shoe subscription service — the team at On is pioneering exciting changes in the performance sportswear industry. 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第一種順序 -->
+    <div class="container">
+      <div class="row mb-5">
+        <h2 class="col-12 text-center mb-3 fst-italic">Circular business model</h2>
+        <div class="col-xl-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8l2E0eymYKw?si=VMtmA6YAoxhagX2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col-xl-6">
+          <h2 class="mt-2">Pioneering</h2>
+            <div class="my-5">
+              With the creation of their unique CloudTec® technology, which provides runners with responsive, multi-directional cushioning in their footwear, On was a brand already doing things differently. Now they’re taking this commitment to innovation even further: From the Cloudneo to the launch of their Cyclon program — a recyclable shoe subscription service — the team at On is pioneering exciting changes in the performance sportswear industry. 
+            </div>
+        </div>
+      </div>
+    
+    <!-- 切版換順序 -->
+
+
+
+
+
+
+  </main>
+
+
+
+  <!-- 向上標籤 -->
+  <a href="#" class="position-fixed end-0 bottom-0 text-decoration-none m-5 p-2 text-white rounded-circle fs-3 bg-warning darker" style="z-index: 1000;"><i class="fa-solid fa-angles-up"></i></a>
+  <!-- 向上標籤 -->
+  <!-- footer -->
+  <footer class="footer mt-auto py-5 mx-0 bg-dark text-white ">
+    <div class="container">
+      <div class="contact">
+          <div class="address">
+              <h2 class="title3">Contact Us</h2>
+              <p>If you have any questions, please feel free to let us know</p>
+              <ol>
+                  <li><i class="fa-solid fa-location-crosshairs"></i> No. 7, Section 5, Xinyi Road, Xinyi District, Taipei City</li>
+                  <li><i class="fa-solid fa-phone"> </i> 02-1234-5678</li>
+                  <li><i class="fa-solid fa-envelope"></i> example@mail.com</li>
+              </ol>
+          </div>
+  </footer>
+  <!-- footer -->
+
+<!-- Modal 會員登入-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">Welcome to On Running</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 會員登入-->
+
+<!-- Modal 購物車 畫布 -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Welcome to your shopping cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-center">
+    <i class="bi bi-bag-dash" style="font-size: 100px;"></i>
+          <h3>There is 0 item in your cart</h3>
+  </div>
+  <div class="d-flex justify-content-end mb-3 me-2">
+    <button type="button" class="btn btn-dark" onclick="BacktoShop()">Back to shop</button>
+  </div>
+</div>
+<!-- Modal 購物車 畫布 -->
+<script>
+  var dropdownMenuTimeout;
+
+function showDropdownMenu() {
+  clearTimeout(dropdownMenuTimeout);
+  var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+  dropdownMenu.style.display = 'block';
+};
+
+function hideDropdownMenu() {
+  dropdownMenuTimeout = setTimeout(function() {
+    var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+    dropdownMenu.style.display = 'none';
+  }, 200);
+};
+
+function BacktoShop() {
+  window.location.href = 'product-list.html';
+};
+
+document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', event => {
+        const selectedStore = event.target.getAttribute('data-value');
+        document.getElementById('selectedStore').value = selectedStore;
+        document.getElementById('stores').value = selectedStore;
+    });
+});
+
+</script>
+
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- bootstrap cdn js -->
+</body>
+</html>

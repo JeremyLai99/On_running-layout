@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Running</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="d-flex flex-column h-100">
+     <!-- nav bar -->
+   <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="ps-3" style="height: 50px;" src="images/onlogo-white.png" alt="on running"></a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-warning rounded-3" style="font-weight: 900;">
+                <!-- 下拉選單 開始 -->
+                <li class="nav-item dropdown" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                  <a class="active nav-link dropdown-toggle" href="product-list.html" id="navbarDropdown" role="button" aria-expanded="false">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="product-list.html#roadrunning">Road Running</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#lifestyle">Lifestyle</a></li>
+                    <li><a class="dropdown-item" href="product-list.html#training">Training</a></li>
+                  </ul>
+                </li>
+                <!-- 下拉選單 結束 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">Q & A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About On</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <li class="nav-item " >
+                  <a  class="btn" style="padding: 8px !important;" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <i class="fa-solid fa-circle-user"></i></a>
+                </li>
+                <!-- 登入畫面 互動視窗 -->
+                <!-- 購物車 畫布-->
+                <li class="nav-item">
+                  <a class="btn" style="padding: 8px !important;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bag-shopping fs-5">
+                      <span class="position-absolute translate-middle badge rounded-pill bg-danger" style="font-size: xx-small; top: 17px; right: -10px;">99+</span>
+                    </i>
+                  </a>
+                </li>             
+                <!-- 購物車 畫布-->
+                
+                <!-- 有空嘗試下拉搜尋 -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./abount.html"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                </li> -->          
+              </ul>            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+   </div>
+   <!-- nav bar -->
+   
+
+
+   <!-- 自傳影片 -->
+   <div class="container-fluid p-0" style="position: relative;">
+    <div class="row">
+      <div class="col p-0">
+        <div class="position-absolute text-white fst-italic" style="font-size: 50px ; bottom:  10px; left: 10px; ;">Fear Nothing. <br>Feel Everything.</div>
+        <video id="myVideo" autoplay loop muted style="height: auto; max-height: 100vh; width: 100%; object-fit: cover;">
+          <source src="./videos/On _ Dear Echo_ Samuel Fitwi.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+   <!-- 自傳影片 -->
+
+   
+  <main class="flex-shrink-0 mt-5">
+    <!-- shop by Catagory -->
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 text-center">Shop by Catagory</h2>
+        <div class="d-flex justify-content-center">
+          <div class="col-12 col-md-3 mx-2 overflow-hidden">
+            <img src="images/apparel.png" alt="" class="w-100  py-5" style="object-fit: cover;">            
+          </div>
+          <div class="col-12 col-md-3 mx-2 overflow-hidden">
+              <img src="images/shoes.png" alt="" class="w-100  py-5" style="object-fit: cover;">            
+          </div>
+          <div class="col-12 col-md-3 mx-2 overflow-hidden">
+              <img src="images/accessories.png" alt="" class="w-100  py-5" style="object-fit: cover;">            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shop by Catagory -->
+
+    <!-- 商品陳列 -->
+    <div class="container-fluid bg-dark pb-5">
+      <div class="row">
+        <h2 class="col-12 text-start text-white mt-5">You may be interested in</h2>
+        <div class="col-6 col-lg-3 p-1">
+          <a href="product.html" class="text-decoration-none text-black">
+            <div class="card mx-1 my-2 p-2 mb-2" >
+              <div style="overflow: hidden;">
+                  <img src="images/shoes01.jpg" class="card-img-top rounded-3"  alt="..." style="object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cloudrunner 2 Waterproof</h5>
+                <p class="card-text mb-0 !important">Men - Road running, waterproof. superfoam</p>
+                <p class="card-text mb-0 !important fs-5 fw-bold">NT$5,580.00</p>                            
+              </div>                      
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 p-1">
+          <a href="product.html" class="text-decoration-none text-black">
+            <div class="card mx-1 my-2 p-2 mb-2" >
+              <div  class="position-relative" style="overflow: hidden;">
+                <img src="images/shoes02.jpg" class="card-img-top rounded-3"  alt="..." style="object-fit: cover;">
+                <div class="bg-danger text-white position-absolute top-0 end-0 p-2 m-2">Hot Sell</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cloudrunner 2 Waterproof</h5>
+                <p class="card-text mb-0 !important">Men - Road running, waterproof. superfoam</p>
+                <p class="card-text mb-0 !important fs-5 fw-bold">NT$5,580.00</p>                            
+              </div>                      
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 p-1">
+          <a href="product.html" class="text-decoration-none text-black">
+            <div class="card mx-1 my-2 p-2 mb-2" >
+              <div style="overflow: hidden;">
+                  <img src="images/shoes03.jpg" class="card-img-top rounded-3"  alt="..." style="object-fit: cover;">
+                </div>
+                  <div class="card-body">
+                  <h5 class="card-title">Cloudrunner 2 Waterproof</h5>
+                  <p class="card-text mb-0 !important">Men - Road running, waterproof. superfoam</p>
+                  <p class="card-text mb-0 !important fs-5 fw-bold">NT$5,580.00</p>                            
+                  </div>                      
+              </div>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 p-1">
+          <a href="product.html" class="text-decoration-none text-black">
+            <div class="card mx-1 my-2 p-2 mb-2" >
+              <div style="overflow: hidden;">
+                  <img src="images/shoes04.jpg" class="card-img-top rounded-3"  alt="..." style="object-fit: cover;">                                        
+                </div>
+                  <div class="card-body">
+                  <h5 class="card-title">Cloudrunner 2 Waterproof</h5>
+                  <p class="card-text mb-0 !important">Men - Road running, waterproof. superfoam</p>
+                  <p class="card-text mb-0 !important fs-5 fw-bold">NT$5,580.00</p>                            
+                  </div>                      
+              </div>
+            </a>
+        </div>   
+      </div>
+    </div>
+    <!-- 商品陳列 -->
+
+    <!-- explore -->
+    <div class="container-fluid mb-5">
+      <div class="row">
+          <h1 class="col-12 fw-bold d-flex justify-content-center mt-5 mb-3">Explore</h1>
+          
+          <div class="col-6 col-md-3 text-center">
+            <div class="position-relative mb-3">
+              <a href="news.html">
+                <img src="images/story01.avif" alt="" class="w-100" style="border-radius: 30px;">              
+              <div class="custom-overlap position-absolute bg-transparent w-100 h-100 top-0 start-0 "style="border-radius: 30px;">
+              </div>
+              </a>
+            </div>
+            <a href="news.html" class="text-decoration-none fw-bold fs-5 text-black hide" >Roger Federer</a>
+          </div>
+
+          
+          <div class="col-6 col-md-3 text-center">
+            <div class="position-relative mb-3"><a href="news.html">
+              <img src="images/story02.avif" alt="" class="w-100" style="border-radius: 30px;">              
+              <div class="custom-overlap position-absolute bg-transparent w-100 h-100 top-0 start-0 "style="border-radius: 30px;"></div></a>
+            </div>
+            <a href="news.html" class="text-decoration-none fw-bold fs-5 text-black  hide">Tim Don</a>
+          </div>
+          
+          
+          <div class="col-6 col-md-3 text-center">
+            <div class="position-relative mb-3"><a href="news.html">
+              <img src="images/story03.avif" alt="" class="w-100" style="border-radius: 30px;">              
+              <div class="custom-overlap position-absolute bg-transparent w-100 h-100 top-0 start-0 " style="border-radius: 30px;"></div></a>
+            </div>
+            <a href="news.html" class="text-decoration-none fw-bold fs-5 text-black hide">Ben Hoffman</a>
+          </div>
+          
+          
+          <div class="col-6 col-md-3 text-center">
+            <div class="position-relative mb-3"><a href="news.html">
+              <img src="images/story04.avif" alt="" class="w-100" style="border-radius: 30px;">              
+              <div class="custom-overlap position-absolute bg-transparent w-100 h-100 top-0 start-0 " style="border-radius: 30px;"></div></a>
+            </div>
+            <a href="news.html" class="text-decoration-none fw-bold fs-5 text-black hide">Mary Keitany</a>
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- explore -->
+
+  </main>
+
+  <!-- 向上標籤 -->
+  <a href="#" class="position-fixed end-0 bottom-0 text-decoration-none m-5 p-2 text-white rounded-circle fs-3 bg-warning darker"><i class="fa-solid fa-angles-up"></i></a>
+  <!-- 向上標籤 -->
+
+  <!-- footer -->
+  <footer class="footer mt-auto py-5 mx-0 bg-dark text-white ">
+    <div class="container-fluid">
+      <div class="contact">
+          <div class="address">
+              <h2 class="title3">Contact Us</h2>
+              <p>If you have any questions, please feel free to let us know</p>
+              <ol>
+                  <li><i class="fa-solid fa-location-crosshairs"></i> No. 7, Section 5, Xinyi Road, Xinyi District, Taipei City</li>
+                  <li><i class="fa-solid fa-phone"> </i> 02-1234-5678</li>
+                  <li><i class="fa-solid fa-envelope"></i> example@mail.com</li>
+              </ol>
+          </div>
+  </footer>
+  <!-- footer -->
+
+<!-- Modal 會員登入-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">Welcome to On Running</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 會員登入-->
+
+<!-- Modal 購物車 畫布 -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-warning" id="offcanvasExampleLabel">Welcome to your shopping cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-center">
+    <i class="bi bi-bag-dash" style="font-size: 100px;"></i>
+          <h3>There is 0 item in your cart</h3>
+  </div>
+  <div class="d-flex justify-content-end mb-3 me-2">
+    <button type="button" class="btn btn-dark" onclick="BacktoShop()">Back to shop</button>
+  </div>
+</div>
+<!-- Modal 購物車 畫布 -->
+
+
+<script>
+  var dropdownMenuTimeout;
+
+function showDropdownMenu() {
+  clearTimeout(dropdownMenuTimeout);
+  var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+  dropdownMenu.style.display = 'block';
+};
+
+function hideDropdownMenu() {
+  dropdownMenuTimeout = setTimeout(function() {
+    var dropdownMenu = document.querySelector('.nav-item.dropdown .dropdown-menu');
+    dropdownMenu.style.display = 'none';
+  }, 200);
+};
+
+function BacktoShop() {
+  window.location.href = 'product-list.html';
+};
+</script>
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- bootstrap cdn js -->
+</body>
+</html>
